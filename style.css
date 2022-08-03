@@ -1,0 +1,126 @@
+/* ROOT SETTING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#000000c5, #00000086),
+        url(./img/netflix-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo .logo-img img {
+    width: 150px;
+}
+
+.logo .logo-btn button {
+    background-color: #dd0505;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* HEADER TEXT DETAILS */
+.header-details {
+    margin: 7em auto;
+}
+
+.header-details h1 {
+    font-size: 3.2em;
+    color: white;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.header-details h3 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.header-details p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.header-details .email-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.header-details .email-field input {
+    padding: 20px;
+    width: 420px;
+    outline: none;
+}
+
+.header-details .email-field .email-input {
+    position: relative;
+}
+
+.header-details .email-field label {
+    font-size: 20px;
+    color: #55b39b;
+    padding: 14px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    transition: 0.3s ease all;
+}
+
+/*Labele style when input field is in focus*/
+.email:focus+label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #55b39b;
+    top: 5px;
+    left: 17px;
+    padding: 0 5px 0 5px;
+    pointer-events: none;
+}
+
+.header-details .email-field button {
+    padding: 14px 40px;
+    background-color: #dd1717;
+    color: white;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.header-details .email-field button:hover {
+    background-color: #d41e1e;
+}
